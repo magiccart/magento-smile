@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+	<default>
+		<reference name="head">
+            <action method="addCss" ifconfig="magicbrand/general/enabled"><stylesheet>magiccart/plugin/css/flexisel.hack.css</stylesheet></action>
+            <action method="addCss" ifconfig="magicbrand/general/enabled"><stylesheet>magiccart/magicbrand/css/magicbrand.css</stylesheet></action>
+            <action method="addJs" ifconfig="magicbrand/general/jquery"><script>magiccart/jquery.min.js</script></action>         
+            <action method="addJs" ifconfig="magicbrand/general/jquery"><script>magiccart/jquery.noconflict.js</script></action>
+            <action method="addJs" ifconfig="magicbrand/general/enabled"><script>magiccart/plugin/jquery.flexisel.hack.js</script></action>
+        </reference>
+<!-- 		<reference name="content">
+			<block type="magicbrand/brand" name="brand" after="-" template="magiccart/magicbrand/magicbrand.phtml" />
+		</reference> -->
+	</default>
+	
+</layout>
+

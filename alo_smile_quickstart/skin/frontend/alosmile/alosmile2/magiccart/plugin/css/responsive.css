@@ -1,0 +1,177 @@
+
+@media (min-width: 1200px) {
+  						
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.box-support ul li {padding:0 10px !important ;}
+	.box-support .box-phone .media-body p, 
+	.box-support .box-email .media-body p a {font-size:11px !important;}
+	.magicmenu .nav-desktop .level0.first .level-top-mega {width:100% ; padding-top: 20px ; left:0 !important ;}
+	.magicmenu .nav-desktop .level0 .level-top-mega .mage-column .children { width: 220px !important;}
+	.magicmenu .nav-desktop .level0 .level-top-mega .children .nav a {line-height:30px !important ;}
+	.magicmenu .level0.first  .level-top-mega .content-mega .content-mega-horizontal {width: 100% !important;}
+	.magicslider .bx-caption {top:20% !important ;}
+	.block-policy span.text {font-size:13px !important;}
+	.banner .box-texts,.banner .box-text {top:40% !important ;}
+	.blog-static .block-title-tabs .nbs-flexisel-item img {display: inline;float: left;width: 100%;}
+	#fancybox-wrap #popup-newsletter {width:944px !important;}
+}
+
+/* 960px <= width < 1200px */
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+   .magicmenu .nav-desktop .level0.first .level-top-mega { left:0 !important ;}
+}
+/* Design for a width of 960-1024 px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 940px <= width < 1170px */
+@media (min-width: 940px) and (max-width: 1170px) {
+
+}	
+
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .box-support ul li {padding:0 4px !important ;}
+    .box-support .box-phone .media-body p, 
+	.box-support .box-email .media-body p a {font-size:11px !important;}
+	.banner-top .box-text {margin: 0 30px !important;padding: 21px 0 !important;top: 38% !important;}
+	.block-policy span.text  , .block-policy p {font-size:11px !important ;}
+	.alo-newproducts .block-title-tabs .magictabs .item h3 span, 
+	.alo-newproducts .block-title-tabs .magictabs .item.active h3 span { font-size:13px !important ; }
+	.regular-price .price ,.block .block-title strong span{font-size:12px !important;}
+	.block-footer-copyright .col-lg-6.pull-right {float: left !important;}
+	.block-footer-copyright .paypal {float: left !important;padding:20px 0 0 !important;}
+	.product-view .toggle-tabs .item {font-size:10px !important ;}
+	.product-view .product-shop{clear: both;}
+	.data-table td {padding: 3px !important;}
+	.banner .box-texts,.banner .box-text {top:30% !important ;margin: 0 10px !important;}
+	.banner .box-text h3 {font-size:15px !important ; line-height:15px !important ; }
+	.blog-static .block-title-tabs .nbs-flexisel-item img {display: inline;float: left;width: 100%;}
+	.header .form-search {display:none ;}
+	.header .inner-box {padding: 34px 0 0 !important;}
+	.block .block-title strong span {font-size:12px !important ;}
+	.no-display{display:block !important;}
+	.category-products .products-grid > li:nth-child(3n+1){clear: none !important;}
+	.category-products .products-grid > li:nth-child(2n+1){clear: left !important;}
+	#fancybox-wrap,#fancybox-content,#fancybox-content > div {width:688px !important;}
+	#fancybox-wrap #popup-newsletter{width:100% !important;}
+	#popup-newsletter-validate-detail .block-content{float:none !important;margin:0 auto;width:570px !important;}
+	#popup-newsletter .block-content .input-box{width:260px !important;}
+	#popup-newsletter .block-content button.button span{padding:0 20px !important;}
+	#popup-newsletter .subscribe-bottom{text-align:center !important;padding: 50px 25px 25px 0 !important;}
+}
+@media (max-width: 980px){
+    .box-support ul li {padding:0 4px !important ;}
+    .box-support .box-phone .media-body p, 
+	.box-support .box-email .media-body p a {font-size:11px !important;}
+    .magicmenu .nav-desktop .level0 .level-top-mega .children ul {margin-left:20px !important ;}
+    .magicmenu .nav-desktop .level0 .level-top-mega .mage-column .children { width: 150px !important;}
+	.magicmenu .nav-desktop .level0 .level-top-mega .children .nav a {line-height:30px !important ;}
+	.magicmenu .nav-desktop .level0 .level-top {padding:0 10px !important ;}
+	.banner-top .box-text {margin: 0 30px !important;padding: 21px 0 !important;top: 38% !important;}
+	.banner-top .box-text h3 {font-size:12px !important ;}
+	.banner-top .box-text p {font-size:11px !important ;}
+	.block-policy span.text  , .block-policy p {font-size:11px !important ;}
+	.alo-newproducts .block-title-tabs .magictabs .item h3 span, 
+	.alo-newproducts .block-title-tabs .magictabs .item.active h3 span { font-size:13px !important ; }
+	.regular-price .price ,.block .block-title strong span{font-size:12px !important;}
+	.block-footer-copyright .col-lg-6.pull-right {float: left !important;}
+	.block-footer-copyright .paypal {float: left !important;padding:20px 0 0 !important;}
+     .product-view .toggle-tabs .item {font-size:10px !important ;}
+	 .data-table td {padding: 3px !important;}
+	.banner .box-texts,.banner .box-text {top:30% !important ;margin: 0 10px !important;}
+	.banner .box-text h3 {font-size:15px !important ; line-height:15px !important ; }
+	.block .block-title strong span {font-size:12px !important ;}
+}
+/* Iphone 5 landscape */
+@media(max-width:767px) {
+    .header-top-left ,.header .welcome-msg ,.header-content-right {float: none !important ;text-align: center !important ;}
+	.header-content-ct  {padding:10px 0 ;}
+    .header .header-top-right {display: inline-flex !important;margin:20px auto 0;width: 300px;float:none !important ;}
+	.miniCartWrap {right :0 !important ; left: 0 ;}
+	.mean-container .mean-bar {z-index:1 !important ;}
+	.header .quick-access{float: none !important;margin-top: 20px !important;}
+	.header .form-search {position: static !important ;}
+	.banner img {margin-bottom: 30px !important ; width: 100%;}
+	.nbs-flexisel-item img {width: 100%;}
+	 p.title-bt  {display:none ;}
+	 .product-view .toggle-tabs .item {font-size:10px !important ; width:100% ;} 
+	 .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td { padding:3px !important ;}
+	#shopping-cart-table .a-right{text-align:center !important ;}
+	#shopping-cart-table button.button{margin:10px !important ;}
+	.footer .block {float: left;margin: 0;width: 100%;}
+	.mini-maincart .mini-contentCarts {  right: -86px !important;}
+	.no-display{display:block !important;}
+	.product-view .product-shop .no-display{display:none !important;}
+	#fancybox-wrap #popup-newsletter {width: 100% !important;}
+	#popup-newsletter-validate-detail .block-content{float:none !important;margin:0 auto;width:390px !important;}
+	#popup-newsletter .block-content .input-box{width:100% !important;margin: 0 auto !important;padding: 0 20px !important;}
+	#popup-newsletter .block-content button.button span{padding:0 20px !important;}
+	#popup-newsletter .form-subscribe-header label{font-size: 20px !important;line-height: 20px !important;}
+	#popup-newsletter .subscribe-bottom{text-align:center !important;padding:20px 25px 25px 0 !important;}
+	.promo-panel-sale{font-size:15px !important;line-height:15px !important;padding: 15px 0 !important;}
+	.promo-panel-text1{font-size: 15px !important;}
+	.promo-panel-text1,.promo-panel-text2{padding: 10px 0 0 !important;}
+	#popup-newsletter .block-content .actions{float:none !important;margin:0 !important;padding:10px 0;clear: both;}
+	#toPopup {left: 0 !important;margin: auto;right: 0;width: 250px !important;}
+	.product-view .product-shop{clear:both;padding-top: 10px;}
+	.link-view{display: none;}
+	.toggle-tab.mobile{color: #ffffff;cursor: pointer;text-align: right;display: block !important;width: 20px;padding: 0px;top: 0;position: absolute;right: 0px;z-index: 0;}
+    .toggle-content,.block-layered-nav .toggle-content-{ display: none;}
+	.toggle-content.visible{ display: block;}
+	.block-layered-nav .toggle-tab.mobile{color: #888;font-size: 14px;}
+	.toggle-tab:before{content: "";font-family: FontAwesome;}
+	.toggle-visible .toggle-tab:before{ content: "";font-family: FontAwesome;}
+	.block-layered-nav .toggle-tab.mobile{line-height: 40px; }
+	.narrow-by{position: relative;padding: 5px 0;outline:medium none !important;margin: 0;}
+	.block.block-layered-nav .block-title,.footer .block,.static-alo{position: relative;}
+}
+
+/* Tablet (Portrait) - design for a width of 768px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+	table#wishlist-table,table#shopping-cart-table, table#checkout-review-table, table#my-orders-table {border: 0 none;outline: medium none;}
+	table#wishlist-table td, 
+	table#wishlist-table th table#product-review-table td, 
+	table#shopping-cart-table td, 
+	table#shopping-cart-table th, 
+	table#checkout-review-table td, 
+	table#checkout-review-table th, 
+	table#my-orders-table th, 
+	table#my-orders-table td {display: block;float: none; text-align: center;}
+	.data-table th, .data-table td.last {border-bottom: 1px solid #DDDDDD !important;}
+	.data-table tfoot {border-bottom: none;}
+	.checkout-cart-index .col-main .page-title h1, .checkout-cart-index .col-main .page-title h2 { float: none;}
+	.data-table thead.hidden-phone{display:none;}
+	.cart ul.checkout-types{float: none;text-align:center;}
+	.col2-set,.col2-set2 { float: none;width: 100%;margin-bottom: 10px;}
+	.account-login .col2-set,.account-login .col2-set2 { float: none;width: 100%;margin-bottom: 10px;}
+	.multiple-checkout .col2-set .col-1,.multiple-checkout .col2-set .col-2 {float: none;width: 100%;margin-bottom: 10px;}
+	.my-wishlist .buttons-set {text-align: center; padding: 20px 0 0;}
+	.my-wishlist thead.hidden-phone{display:none;}
+	
+} 
+
+/* IPHONE 4 + 5 Portrait */
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+	.col-mobile-12{width:100%;}
+   #popup-newsletter .form-subscribe-header label{font-size:14px !important;}
+   .promo-panel-sale{font-size:12px !important;line-height:12px !important;padding:10px 0 !important;}
+   .header .form-search input.input-text{width: 200px !important;}
+}
+
+
+
+
+
+
+
+

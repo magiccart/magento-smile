@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_block>
+      <title><![CDATA[Footer Links]]></title>
+      <identifier><![CDATA[footer_links]]></identifier>
+      <content><![CDATA[<ul class="links">
+<li class="first"><a href="{{store direct_url="catalog/seo_sitemap/category/"}}">Site Map</a></li>
+<li><a href="{{store direct_url="catalogsearch/term/popular/"}}">Search Terms</a></li>
+<li><a href="{{store direct_url="catalogsearch/advanced"}}">Advanced Search</a></li>
+<li><a href="{{store direct_url="sales/guest/form"}}">Orders and Returns</a></li>
+<li class="last"><a href="{{store direct_url="contacts"}}">Contact Us</a></li>
+</ul>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Cookie restriction notice]]></title>
+      <identifier><![CDATA[cookie_restriction_notice_block]]></identifier>
+      <content><![CDATA[<p>This website requires cookies to provide all of its features. For more information on what data is contained in the cookies, please see our <a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy page</a>. To accept cookies from this site, please click the Allow button below.</p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[header-block1]]></title>
+      <identifier><![CDATA[header-block1]]></identifier>
+      <content><![CDATA[<div class="box-support">
+<ul>
+<li class="first">
+<div class="box-phone"><span class="pull-left"><em class="fa fa-phone">&nbsp;</em></span>
+<div class="media-body pull-left">
+<p><span>Hotline:</span>(+800) 123 456 7890</p>
+</div>
+</div>
+</li>
+<li class="last">
+<div class="box-email"><span class="pull-left"><em class="fa fa-envelope-o">&nbsp;</em></span>
+<div class="media-body pull-left">
+<p><a href="mailto:support@alothemes.com">support@alothemes.com</a></p>
+</div>
+</div>
+</li>
+</ul>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Alo Block Footer Top]]></title>
+      <identifier><![CDATA[block_footer_top]]></identifier>
+      <content><![CDATA[<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="block-static2 static-alo">
+<div class="block block-about">
+<div class="block-title"><strong> <span>About Store</span> </strong></div>
+</div>
+<span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+<div class="toggle-content">
+<div class="logo-footer"><img class="icon-about" alt="Smile" src="{{media url="wysiwyg/alothemes/static/logo-footer.png"}}" />
+<p>Sed ut perspiciatis unde omnis iste natus voluptatem accusantium doloremque lauda totam rem aperiam sunshine love.</p>
+</div>
+<div class="social-links icon-wrapper"><a class="icon-facebook" href="#"><em class="fa fa-facebook">&nbsp;</em></a> <a class="icon-twitter" href="#"><em class="fa fa-twitter">&nbsp;</em></a> <a class="icon-rss" href="#"><em class="fa fa-rss">&nbsp;</em></a> <a class="icon-envelope " href="#"><em class="fa fa-envelope ">&nbsp;</em></a> <a class="icon-pinterest" href="#"><em class="fa fa-pinterest">&nbsp;</em></a> <a class="icon-instagram" href="#"><em class="fa fa-instagram">&nbsp;</em></a></div>
+</div>
+</div>
+</div>
+<div class="customer col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="block-static3 static-alo">{{widget type="magicsocial/widget_latesttweet" template="magiccart/magicsocial/tweet.phtml"}}</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">{{block type="tag/popular" name="tags_popular" template="tag/popular.phtml"}}</div>
+<div class="customer col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<div class="block-static4 static-alo">{{block type="newsletter/subscribe" template="newsletter/subscribe.phtml"}}</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Block Footer Paypal]]></title>
+      <identifier><![CDATA[paypal]]></identifier>
+      <content><![CDATA[<p><img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/paypal.png"}}" alt="" /></p>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Alo Block Policy]]></title>
+      <identifier><![CDATA[policy]]></identifier>
+      <content><![CDATA[<div class="block block-policy">
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-sm-3 col-xs-12">
+<div class="icons-box ">
+<div class="icon"><span class="fa fa-plane">&nbsp;</span></div>
+<div class="text-box">
+<h3>Free shipping</h3>
+<span class="text">Free shipping on all UK order</span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-xs-12">
+<div class="icons-box">
+<div class="icon  icon-money"><span class="fa fa-money">&nbsp;</span></div>
+<div class="text-box">
+<h3>Free return</h3>
+<span class="text">30 days money back guarantee !</span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-xs-12">
+<div class="icons-box ">
+<div class="icon"><span class="fa fa-clock-o">&nbsp;</span></div>
+<div class="text-box">
+<h3>Member discount</h3>
+<span class="text">Open: 9:00AM - Close: 21:00PM</span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-3 col-xs-12">
+<div class="icons-box ">
+<div class="icon"><span class="fa fa-life-ring">&nbsp;</span></div>
+<div class="text-box">
+<h3>Support 24/7</h3>
+<span class="text">We support online 24 hours a day</span>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Testimonials]]></title>
+      <identifier><![CDATA[testimonials]]></identifier>
+      <content><![CDATA[<div>{{widget type="testimonial/widget_slide" template="magiccart/testimonial/slide.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Alo Block Menu]]></title>
+      <identifier><![CDATA[alo_block_menu]]></identifier>
+      <content><![CDATA[<div class="banner-inner-content"><a href="#"> <img class="img-responsive" src="{{media url="wysiwyg/alothemes/static/block-menu.png"}}" alt="" /> </a></div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Alo Slideshow  (Home page 5)]]></title>
+      <identifier><![CDATA[slide]]></identifier>
+      <content><![CDATA[<div>{{widget type="magicslider/widget_slide" slide_id="4" easing="easeInSine" controls="1" pause="4000" speed="500" width="1920" height="901" template="magiccart/magicslider/magicslider.phtml"}}</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+    <cms_block>
+      <title><![CDATA[Products Deal]]></title>
+      <identifier><![CDATA[deal]]></identifier>
+      <content><![CDATA[<div class="deal-of"><img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/img-dea.jpg"}}" />
+<div class="deal">
+<div class="container">
+<div class="heading">
+<h2 class="title">Deal of the day</h2>
+<span class="intro">Elegant products many people waiting and crave</span></div>
+<div>{{widget type="magicproduct/widget_magicproduct" template="magiccart/magicproduct/magicproduct-gridtimer.phtml" types="saleproduct" active="saleproduct" limit="1" enableResponsiveBreakpoints="1" portrait="1" landscape="1" tablet="1" desktop="1" visibleItems="1" marginColumn="10" productDelay="500" widthImages="200" heightImages="250"}}</div>
+</div>
+</div>
+</div>]]></content>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </blocks>
+</root>

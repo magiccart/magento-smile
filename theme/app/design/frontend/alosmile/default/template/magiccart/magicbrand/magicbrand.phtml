@@ -1,0 +1,58 @@
+<?php if(!$this->config['enabled']) return;?>
+
+<?php $title = isset($this->config['title']) ? $this->config['title'] : ''; ?>
+
+<?php $selector = $this->generateRandomString(); //md5(rand()); //rand(0,666666); ?>
+
+<?php $brands = $this->getBrand(); if(!count($brands)) return;?>
+
+<div id="<?php echo $selector ?>">
+
+    <?php //echo $title ? '<h2 class="title">'.$title.'</h2>' : '' ?>
+
+    <ul class="magicbrand">
+
+    <?php foreach ($brands as $brand) :?>
+
+      <li>
+
+        <img class="brand" src="<?php echo $this->getImage($brand)?>" alt="<?php echo $this->__($brand->getTitle()) ?>" title="<?php echo $this->__($brand->getTitle()) ?>" />
+
+      </li>
+
+    <?php endforeach ?>
+
+    </ul>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+    jQuery( document ).ready(function($) {
+
+        (function(selector){
+
+            var $content = $(selector);
+
+            var $slider  = $('.magicbrand', $content);
+
+            $slider.flexisel({
+
+                // margin: 15,
+                moveSlide: 1,
+                <?php echo $this->setFlexisel() ?>
+
+            });
+
+
+
+        })("#<?php echo $selector ?>");
+
+    });
+
+</script>
+
+
+

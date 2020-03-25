@@ -1,0 +1,88 @@
+﻿Upgrade Alo Smile  1.5
+
+(09/11/2015)
+ ^  Upgrade magento-1.9.2.2
+ ^  Upgrade layout on categories for mobile
+	path file(link): app/design/frontend/alosmile/default/templat/page/2columns-left.phtml
+				     http://snag.gy/uTRpd.jpg
+					 
+					 app/design/frontend/alosmile/default/template/catalog/layer/view.phtml
+					 http://snag.gy/Lhh7E.jpg
+					 
+					 skin/frontend/alosmile/default and(alosmile2,alosmile3,alosmile4,alosmile5,alosmile6)/magiccart/plugin/css/responsive.css
+					 http://snag.gy/8lzPt.jpg
+ ^  Upgrade Magicmenu
+	update all file in folder: app\code\local\Magiccart\Magicmenu
+    path file(link): app/design/frontend/alosmile/default/template/page/html/header.phtml
+	                 http://snag.gy/OxKgt.jpg
+					 
+					 js/magiccart/magicmenu.js
+					 http://snag.gy/etH3A.jpg
+					 
+	                 skin/frontend/alosmile/default and(alosmile2,alosmile3,alosmile4,alosmile5,alosmile6)/magiccart/magicmenu/css/magicmenu.css
+					 http://snag.gy/zfW9V.jpg
+ 
+ # Upgrade fix bug  Alo Smile
+	1 Fix logo max-width 
+		path file(link): app/design/frontend/alosmile/default and(alosmile2,alosmile3,alosmile4,alosmile5,alosmile6)/templat/page/html/header.phtml
+				         http://snag.gy/iNp8V.jpg
+						 
+						 skin/frontend/alosmile/default and(alosmile2,alosmile3,alosmile4,alosmile5,alosmile6)/css/styles.css
+						 http://snag.gy/QLz1L.jpg 
+
+    2 Fix image bug style testimonial
+		path file(link): skin/frontend/alosmile/default/css/styles.css
+ 
+ 
+(04/12/2015)
+
+Fix bug from_key in register 1.9.2.2 => remove folder: app\design\frontend\alosmile\default\template\persistent
+
+(22/12/2015)
+
+Update security patches: If you use version old theme can download here: http://alothemes.com/themeforest/security/smile/supee-6788.zip
+
+ 
+ 
+25/10/2016: Update Compatible with magento 1.9.3.0
+
+file changed:
+app\code\local\Magiccart\Magicslider\controllers\Adminhtml\MagicsliderController.php
+app\code\local\Magiccart\Magicslider\Block\Adminhtml\Magicslider\Edit\Tab\Gallery.php
+
+app\code\local\Magiccart\Magiccategory\Block\Adminhtml\Manage\Edit\Tab\Gallery.php
+app\code\local\Magiccart\Magiccategory\controllers\Adminhtml\Magiccategory\ManageController.php
+
+app\code\local\Magiccart\Megashop\Block\Adminhtml\Manage\Edit\Tab\Gallery.php
+app\code\local\Magiccart\Megashop\controllers\Adminhtml\Magiccategory\ManageController.php
+
+app\design\adminhtml\default\default\template\magiccart\magicslider\edit\tab\gallery.phtml
+app\design\adminhtml\default\default\template\magiccart\megashop\edit\tab\gallery.phtml
+
+app\design\frontend\alosmile\default\layout\magiccart\alothemes.xml
+
+ 
+
+
+28/11/2018:
+	Removed files:
+	app\design\frontend\alosmile\default\template\checkout\onepage\payment.phtml
+	app\design\frontend\alosmile\default\template\checkout\onepage\shipping.phtml
+	app\design\frontend\alosmile\default\template\checkout\onepage\shipping_method.phtml
+	app\design\frontend\alosmile\default\template\checkout\multishipping\shipping.phtml
+
+
+
+
+
+
+    
+ 
+    
+  
+  
+ 
+
+  
+   
+	

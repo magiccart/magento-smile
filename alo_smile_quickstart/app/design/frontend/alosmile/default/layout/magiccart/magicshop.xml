@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-06-07 12:27:23
+ * @@Modify Date: 2015-05-24 12:13:23
+ * @@Function:
+ */ 
+-->
+<layout>   
+    <!-- for ! ajaxcart -->
+    <default>
+        <update handle="magicshopdefault" /> 
+        <reference name="head"> 
+            <block type="magicshop/ajaxcart" ifconfig="magicshop/general/enabled" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/>   
+        </reference>
+        <reference name="header">
+            <block type="checkout/cart_sidebar" name="ajaxcart" template="magiccart/magicshop/checkout/cart/mini_cart.phtml"/>
+        </reference>
+    </default>
+    <magicshopdefault>
+        <reference name="head">
+            <action method="addCss"><stylesheet>magiccart/plugin/css/jquery.fancybox-1.3.4.css</stylesheet></action>
+            <action method="addCss"><stylesheet>magiccart/plugin/css/flexisel.hack.css</stylesheet></action> 
+            <action method="addCss"><stylesheet>magiccart/magicshop/css/quickview.css</stylesheet></action>
+            <action method="addCss"><stylesheet>magiccart/magicshop/css/ajaxcart.css</stylesheet></action>
+            <action method="addJs" ifconfig="magicshop/general/jquery"><script>magiccart/jquery.min.js</script></action>
+            <action method="addJs" ifconfig="magicshop/general/jquery"><script>magiccart/jquery.noconflict.js</script></action>
+            <action method="addJs"><script>magiccart/plugin/jquery.fancybox-1.3.4.pack.js</script></action>
+            <action method="addJs"><script>magiccart/plugin/cloud-zoom.1.0.3.min.js</script></action>
+            <action method="addJs"><script>magiccart/plugin/jquery.flexisel.hack.js</script></action>
+            <action method="addJs" ifconfig="magicshop/general/enabled"><script>magiccart/ajaxcart.js</script></action>
+            <action method="addJs" ifconfig="magicshop/general/enabled"><script>magiccart/quickview.js</script></action>
+        </reference>   
+    </magicshopdefault>  
+    <magicshopproduct>
+        <reference name="head">
+            <action method="addJs" ifconfig="magicshop/general/enabled" ><script>varien/product.js</script></action>     
+            <action method="addJs" ifconfig="magicshop/general/enabled"><script>varien/configurable.js</script></action> 
+            <action method="addJs" ifconfig="magicshop/general/enabled"><script>prototype/validation.js</script></action> 
+            <action method="addItem" ifconfig="magicshop/general/enabled"><type>skin_js</type><name>js/bundle.js</name></action>
+        </reference>   
+    </magicshopproduct> 
+	<cms_page>
+		<reference name="head">  
+            <update handle="magicshopproduct" /> 
+		</reference> 
+	</cms_page>
+
+    <catalogsearch_result_index>
+        <reference name="head">
+            <update handle="magicshopproduct" /> 
+        </reference> 
+    </catalogsearch_result_index>  
+    
+    <catalogsearch_advanced_result>
+       <reference name="head">
+            <update handle="magicshopproduct" /> 
+       </reference> 
+    </catalogsearch_advanced_result>
+	
+    <catalog_category_layered>
+        <reference name="head">
+            <update handle="magicshopproduct" /> 
+         </reference>  
+    </catalog_category_layered> 
+    
+    <checkout_cart_index>
+        <reference name="head">
+            <update handle="magicshopproduct" /> 
+         </reference>  
+    </checkout_cart_index>
+    <!-- end for ! ajaxcart -->
+    <!-- ajaxcart & quickview -->
+    <catalog_category_default>
+        <reference name="head"> 
+
+            <update handle="magicshopproduct" />
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+             <!-- <block type="page/html" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/> -->  
+        </reference> 
+    </catalog_category_default>  
+    <catalog_category_layered>
+        <reference name="head"> 
+            <update handle="magicshopproduct" />
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+             <!-- <block type="page/html" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/> -->  
+        </reference> 
+    </catalog_category_layered>  
+    <!-- end ajaxcart & quickview -->
+
+    <!-- for ! quickview -->
+    <magicshop_quickview_view>
+        <update handle="catalog_product_view"/>
+            <remove name="header"/>
+            <remove name="footer"/>
+            <!-- Mage_Catalog -->
+            <reference name="root">
+                <action method="setTemplate"><template>magiccart/magicshop/quickpage.phtml</template></action>
+            </reference>
+        <reference name="product.info">
+          <action method="setTemplate"><template>magiccart/magicshop/catalog/product/view.phtml</template></action>
+        </reference>
+       <!--      <reference name="product.info.media">
+                <action method="setTemplate"><template>magiccart/magicshop/catalog/product/view/media.phtml</template></action>
+            </reference> -->
+            <reference name="content">
+          <remove name="product.info.upsell"/>
+          <remove name="product.info.additional"/>
+          <remove name="product.description"/>
+          <remove name="product.attributes"/>
+          <!-- <remove name="product.info.addto"/> -->
+          <remove name="product.info.extrahint"/>
+        </reference>    
+    </magicshop_quickview_view>
+    <cms_index_index>
+        <reference name="head" ifconfig="magicshop/general/enabled">
+            <update handle="magicshopproduct" /> 
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+             <!-- <block type="page/html" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/> -->        
+        </reference>
+    </cms_index_index>
+   <catalogsearch_result_index>
+        <reference name="head" ifconfig="magicshop/general/enabled">
+            <update handle="magicshopproduct" /> 
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+             <!-- <block type="page/html" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/> -->        
+        </reference>
+    </catalogsearch_result_index>
+
+    <catalogsearch_advanced_result>
+        <reference name="head" ifconfig="magicshop/general/enabled">
+            <update handle="magicshopproduct" /> 
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+             <!-- <block type="page/html" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/> -->        
+        </reference>
+    </catalogsearch_advanced_result>
+
+    <tag_product_list>
+        <reference name="head" ifconfig="magicshop/general/enabled">
+            <update handle="magicshopproduct" />
+            <action method="addItem"><type>js_css</type><name>calendar/calendar-win2k-1.css</name><params/></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+             <!-- <block type="page/html" name="top.Js" as="topJs" template="magiccart/magicshop/jscfg.phtml"/> -->        
+        </reference>
+    </tag_product_list> 
+    <!-- for ! quickview -->
+</layout>
+

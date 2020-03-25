@@ -1,0 +1,84 @@
+.magic-caption{text-align: center;}
+.bx-wrapper .bx-caption {
+    display:none;
+}
+.bx-wrapper .bx-caption.start, .bx-wrapper .bx-caption.play {
+    display:block;
+}
+.play .caption1,.play .caption2,.play .caption3,.play .caption4{left: 0;right: 0;}
+.play .caption1 {
+    position: absolute;
+    top: 30%;
+    z-index:30;
+    opacity: 1;
+    font-weight:bold;
+    font-size: 46px;
+	font-family: "Montserrat",sans-serif;
+	color:#fff ;
+    padding:0;
+    line-height:46px;
+    -moz-animation: fadeInRight 0.8s ease-in 1.3s backwards;
+    -webkit-animation: fadeInRight 0.8s ease-in 1s backwards;
+    animation: fadeInRight 0.8s ease-in 1s backwards;
+}
+.play .caption1 strong{
+    font-size: 46px;
+	color:#d6644a ;
+}
+.play .caption2 {
+    position: absolute;
+    top: 40%;
+	text-shadow: none;
+    opacity:1;
+    z-index:40;
+    padding:0;
+    font-size: 26px;
+    line-height: 26px;
+    font-family: "Raleway";
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    -moz-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    -webkit-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+  
+}
+.play .caption3 {
+    position: absolute;
+    top: 47%;
+    opacity:1;
+    z-index:50;
+    height: 4px;
+    width: 158px;
+    background-color: #fff;
+    margin: 0 auto;
+    -moz-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    animation: fadeInUp 0.8s ease-in 1.7s backwards;
+}
+
+.play .caption4 {
+    position: absolute;
+    top: 50%;
+     z-index:60;
+    opacity:1;
+    cursor:pointer;
+    margin:20px 0 0;
+    -moz-animation: fadeInLeft 1s ease-in 2s backwards;
+    -webkit-animation: fadeInLeft 1sease-in 2s backwards;
+    animation: fadeInLeft 1 sease-in 2s backwards;
+}
+.play .caption4  a {
+    font-weight:bold;
+	font-family: "Montserrat",sans-serif;
+    font-size:12px;
+	color:#fff;
+	outline:none ;
+	padding:15px 24px; 
+	display:inline-block ;
+}
+.play .caption4 a.btn-get {background-color:#d6644a ;} 
+.play .caption4 a.btn-get:hover {background-color:#000 ;} 
+.play .caption4 a.btn-find {background-color:#000 ;} 
+.play .caption4 a.btn-find:hover  {background-color:#d6644a ;}
+.magicslider .bx-wrapper .bx-controls-direction a{top: 40%;} 

@@ -1,0 +1,64 @@
+#magicshop_quickview_handler{
+    background:url(../images/quickview.png) no-repeat scroll 0 0 transparent;
+    width:52px;
+    height:52px;
+}
+#magicshop_quickview_handler:hover {
+    background: url("../images/quickview-hover.png") no-repeat scroll 0 0 transparent;
+    width:52px;
+    height:52px;
+}
+#fancybox-content .product-collateral { 
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 0;width: 0;padding: 0;margin: 0;
+}
+#fancybox-content .product-essential {  
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#fancybox-content .product-view { 
+    background: none repeat scroll 0 0 #fff;
+    border: medium none !important;  text-align: left;
+}
+#fancybox-content .quickview-main .product-view{
+    padding-bottom: 30px;
+}
+#fancybox-content .quickview-index-view {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#fancybox-content .product-more-info > a  > span {
+    font-size: 11px;
+    font-weight: 600;
+    height: 33px;
+    line-height: 33px;
+	text-transform : uppercase ;
+	font-family:"Montserrat";
+}
+.wrap_quickview {padding:30px 0 0 ;}
+.product-more-info a:hover {
+    background-color : #d6644a ;
+} 
+.product-more-info a:hover span {
+    color : #fff ;
+} 
+.product-more-info a{
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    background-color: #333333;
+    width: 99px;
+    z-index: 999;
+    left: 192px;
+	bottom : 22px ;
+	text-align:center ;
+	text-decoration:none ;
+	
+	
+}
+.wrap_quickview .product-view .product-img-box .more-views .nbs-flexisel-nav-top, 
+.wrap_quickview .product-view .product-img-box .more-views .nbs-flexisel-nav-bottom{position:absolute;}
+.product-view .product-img-box .zoom-notice{clear: both;}
+#fancybox-content .nbs-flexisel-nav{position: static;}
+#fancybox-content .nbs-flexisel-nav .nbs-flexisel-nav-top,
+#fancybox-content .nbs-flexisel-nav .nbs-flexisel-nav-bottom{background-color:transparent !important;border:none;left:25px !important;}
+#fancybox-content{padding:0; background-color:#fff ; overflow: visible; box-shadow: 0 0 0 0 ;}
+#fancybox-content > div{overflow: visible !important;}

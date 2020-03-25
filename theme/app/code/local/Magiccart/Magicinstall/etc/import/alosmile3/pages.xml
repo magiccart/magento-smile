@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_block>
+      <title><![CDATA[Smile Reponsive Alo Themes Home page 3]]></title>
+      <root_template><![CDATA[one_column]]></root_template>
+      <identifier><![CDATA[home3]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="row">
+<div class="alo alo-top">
+<h3 class="title"><span>FASHION CATEGORIES</span></h3>
+<p class="title-bt">Ut ut ipsum imperdiet libero viverra blandit. Aliquam ultricies libero ullamcorper, dignissim ipsum sed, placerat ante. Sed luctus, ex id gravida venenatis, diam enim tristique turpis, eget dapibus velit eros sed ligula.</p>
+<div class="banner-top banner1">
+<div class="banner-inner col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content4.jpg"}}" /> </a></div>
+<div class="box-text box-01">
+<h3>Menswear</h3>
+<p>Intimates Fall/Winter 2014</p>
+</div>
+</div>
+</div>
+<div class="banner-top banner2">
+<div class="banner-inner col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content5.jpg"}}" /> </a></div>
+<div class="box-text box-02">
+<h3>WOMenswear</h3>
+<p>New women in the wideworld</p>
+</div>
+</div>
+</div>
+<div class="banner-top banner3">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="banner-inner ">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content6.jpg"}}" /> </a></div>
+<div class="box-text box-03">
+<h3>WATCHES</h3>
+<p>Smile Collection new arrivals</p>
+</div>
+</div>
+<div class="banner-inner banner-inner-bt ">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content7.jpg"}}" /> </a></div>
+<div class="box-text box-03">
+<h3>SHOES</h3>
+<p>Smile Collection new arrivals</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="alo alo-newproducts alo-latest">{{widget type="magicproduct/widget_magicproduct" template="magiccart/magicproduct/magicproduct.phtml" types="featured" active="featured" limit="10" slide="1" scroll="left" autoplay="1" autoPlaySpeed="3000" pauseOnHover="1" row="1" enableResponsiveBreakpoints="1" portrait="1" landscape="2" tablet="3" desktop="3" visibleItems="4" marginColumn="30" widthImages="269" heightImages="360" action="cart,compare,wishlist"}}</div>]]></content>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </pages>
+</root>

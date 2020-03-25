@@ -1,0 +1,435 @@
+/* Add by DVN */
+.magicproduct .ajax_loading {
+	margin-left: 48%;
+	padding: 10px;
+}
+.ajax_loading {
+    margin: auto;
+    text-align: center;
+}
+.magictabs li.item{
+	float: none;
+    display: inline-block;
+    font-size: 13px;
+    height: 28px;
+    line-height: 28px;
+    margin:0 3px 0 0;
+    padding: 0;
+    background-color: #ededed;
+}
+.magictabs li.item.active:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #444 transparent transparent;
+    border-image: none;
+    border-style: solid inset inset;
+    border-width: 5px;
+    content: "";
+    display: block;
+    height: 0;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+    width: 0;
+}
+.magictabs .item span{
+    font-size: 13px;
+    text-transform: none;
+    cursor: pointer;
+    padding: 0 15px;
+	color: #333;
+	font-weight: normal ;
+}
+.magictabs .item:first-child span{
+    border-left: none;
+}
+.magictabs  li.item.active,
+.magicproduct li.active{
+	background-color: #444;
+}
+.magictabs li.item:hover{
+	background-color: #666666;
+}
+.magictabs .item.active span ,
+.magictabs .item:hover span{
+	color: #fff;
+}
+ul.magictabs{padding: 0; margin: 0 0 30px; text-align: center ;}
+
+
+.alo-latest  .magictabs li.item:hover:after,
+.alo-latest   .magictabs li.item.active:after {
+     border: none ;
+}
+.alo-latest  .magictabs li.item {
+	   display: block; 
+}
+.alo-latest .magictabs li.item.active,
+.alo-latest .magicproduct li.active,
+.alo-latest .magictabs li.item:hover{background: none ;	 }
+.alo-latest .block-title-tabs .magictabs  .block-title-tabs h3:before {
+    border-top: 1px solid #ccc;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    z-index: 0;
+}
+.alo-latest .block-title-tabs .magictabs   .block-title-tabs h3 {
+    margin: 0 0 30px;
+    position: relative;
+}
+.alo-latest .block-title-tabs .magictabs   .item h3 span.fa {
+    font-family: FontAwesome !important;
+    left: 0;
+    position: absolute !important;
+    right: 0;
+	bottom: -90% ;
+    text-align: center !important;
+	padding:0 11px !important;
+    width: 38px;
+}
+.alo-latest .block-title-tabs .magictabs   .item h3 span ,
+.alo-latest  .block-title-tabs .magictabs  .item.active h3 span {
+    background: none repeat scroll 0 0 #fff;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 23px;
+	font-weight:500;
+    margin: auto;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    color: #333;
+}
+.alo-latest.alo-bottom .magictabs li.item {
+    display: inline-block;
+	width: auto !important;
+}
+.alo-latest.alo-bottom  .block-title-tabs h3 {
+    text-align: left;
+}
+.alo-latest.alo-bottom .block-title-tabs .magictabs  {text-align: left ;}
+.alo-latest.alo-bottom  .block-title-tabs h3:before {
+    left: 0;
+    right: auto;
+    top: 30px;
+}
+
+.alo-latest.alo-bottom   .block-title-tabs  h3 span {
+    display: block;
+    padding: 0 !important;
+    text-align: left ;
+}
+.alo-latest.alo-bottom  ul li{
+	border-top: 1px solid #f0f0f0 ;
+	padding: 12px 0  ;
+	margin: 0;
+}
+.alo-latest.alo-bottom  ul li:first-child{
+	border-top: none ;
+}
+
+.alo-latest.alo-bottom  .content-products ul li .sticker{
+    display: none ;
+}
+.alo-latest.alo-bottom  .content-products ul li .per-product {
+    float: left;
+    padding: 0 15px 0 0;
+    width: 30%;
+}
+.alo-latest.alo-bottom .content-products  ul li  .products-textlink {
+    float: left;
+    padding: 0;
+    width: 70%;
+	text-align: left;
+}
+.content-products{
+	clear: both;
+	position:relative ;
+}
+.content-products ul{padding:0;margin: 0;}
+.nbs-flexisel-item{line-height: 20px;}
+.alo-slide .flexisel-content {
+    overflow: inherit;
+	transition: all 200ms ease 0s;
+}
+.alo-slide .nbs-flexisel-inner {
+	overflow:inherit ;
+	/*margin-left: -0.5625rem;
+    margin-right: -0.5625rem;*/
+    width: auto !important;
+}
+.alo-slide .content-products:before , 
+.alo-slide .content-products:after {
+    background: none repeat scroll 0 0 rgba(208, 208, 208, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 1000px;
+    z-index: 1;
+}  
+.alo-slide .content-products:before {
+    left: 100%;
+}
+.alo-slide .content-products:after {
+    right: 100%;
+}
+.flexisel-content .item{
+	float: left;
+	background-color: #fff;
+    list-style: none;
+    text-align: center;
+}
+.flexisel-content .item ul{list-style: none;}
+.nbs-flexisel-inner .item{box-shadow:none;background:none;}
+.nbs-flexisel-inner {
+  background:none;
+  border:none;
+}
+
+.nbs-flexisel-item img{
+    margin: 0;
+}
+.nbs-flexisel-nav{
+    width: 100%;
+	cursor: pointer ;
+}
+.nbs-flexisel-nav-left, 
+.nbs-flexisel-nav-right{
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0;
+	position:absolute;
+	float:left;
+	margin: 0 2px;
+	 top: 30% !important;
+	/*  transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s; */
+}
+.nbs-flexisel-nav-left{
+    background-image: url("../images/button-previous.png");
+	left: -20px ;
+}
+.nbs-flexisel-nav-left:hover,
+.nbs-flexisel-nav-right:hover{
+    background-color: transparent;
+}
+.nbs-flexisel-nav-right{
+    background-image: url("../images/button-next.png");
+	right: -25px ;
+}
+.alo-slide { padding:0  0 40px;}
+.alo-slide .nbs-flexisel-nav-right ,
+.alo-slide .nbs-flexisel-nav-left {
+   width:58px; 
+   height:58px;
+   opacity:1 ;
+   z-index:999;
+   top:45% !important ;
+}
+.alo-slide .nbs-flexisel-nav-right { 
+	right : -32px ; 
+	background-image: url("../images/nav-slide.png"); 
+	background-position:100% 0 ; 
+	background-repeat:no-repeat ; 
+	
+}
+.alo-slide .content-products .nbs-flexisel-nav-right:hover  { 
+	background-position:100% 100% ; 
+}
+.alo-slide .content-products .nbs-flexisel-nav-left:hover { 
+	
+	background-position:0 100% ; 
+}
+.alo-slide .nbs-flexisel-nav-left { 
+	left : -32px ;  
+	background-image: url("../images/nav-slide.png"); 
+	background-position:0 0 ;
+	background-repeat:no-repeat ;
+}
+.alo-slide .item .actions-no .button.btn-cart span {
+     width:auto ;
+	 height:auto  ;
+	 text-indent:0 ;
+}
+.alo-slide .products-textlink {
+    left: 0;
+    padding: 15px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 40%;
+	z-index: 101;
+	opacity:0;
+}
+.alo-slide .products-grid  .products-grid .product-name ,
+.alo-slide  .products-grid .product-name a ,
+.alo-slide .products-textlink .price-box .price {
+    color:#eee ;
+	font-size: 23px; 
+}
+.alo-slide .products-textlink .price-box {
+   margin:13px 25px;
+}
+.alo-slide  .products-grid  .products-textlink  .btn-cart  {
+   
+   background-color:transparent ;
+   border: 1px solid #fff ;
+   line-height:48px ;
+   height:48px; 
+   padding:0 27px;
+}
+.alo-slide  .products-grid  .products-textlink  .btn-cart span , 
+.alo-slide  .products-grid  .products-textlink  .btn-cart:hover  span{
+   background-color:transparent ;
+   font-size:15px;
+} 
+.alo-slide  .products-grid  .products-textlink  .btn-cart:hover {
+   background-color:#333;
+   border: 1px solid #333 ;
+} 
+
+.alo-slide  .products-grid .product-name a:hover {
+   color :#eee ;
+}
+.alo-slide  .item-animate .per-product:before {
+    background-color: rgba(77, 77, 77, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform: scale(0.5) rotateY(180deg);
+	-ms-transform: scale(0.5) rotateY(180deg); /* IE 9 */
+    -webkit-transform: scale(0.5) rotateY(180deg); /* Chrome, Safari, Opera */
+    transition: all 0.3s ease 0s;
+	-moz-transition:all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+    width: 100%;
+    z-index: 100;
+}
+
+.alo-slide  .item-animate .per-product:hover .products-textlink {opacity:1;}
+.alo-slide .item-animate .per-product:hover:before {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+	-ms-transform: scale(1) rotateY(0deg); /* IE 9 */
+    -webkit-transform: scale(1) rotateY(0deg); /* Chrome, Safari, Opera */
+    visibility: visible;
+}
+.content-products:hover .nbs-flexisel-nav-left {opacity:1 ; }
+.content-products:hover  .nbs-flexisel-nav-right {opacity:1 ; }
+.block-title-tabs{margin-top: 30px;}
+.block-title-tabs h3 {
+   position: relative ;
+   margin: 0 0 30px;
+   padding:0 0 5px ;
+}
+.block-title-tabs h3  span{
+   position: relative ;
+   text-align: center ;
+   font-size: 18px;
+   text-transform:uppercase;
+   font-family: "Montserrat",sans-serif; 
+   font-weight:500;
+   background: none repeat scroll 0 0 #fff;
+    display: table;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+	margin: auto;
+}
+.block-title-tabs h3:before {
+    border-top: 1px solid #ccc;
+    content: "";
+    height: 1px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    bottom: -40%;
+    width: 15%;
+    z-index: 0;
+   
+}
+.alo-brands .nbs-flexisel-inner{
+   position: relative;
+   padding:  0;
+}
+.alo-brands .nbs-flexisel-nav-left,
+.alo-brands .nbs-flexisel-nav-right{
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    float: left;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    text-indent: -999em;
+    top: 40% !important;
+    transition: all 400ms ease-in-out 0s;
+    z-index: 999;
+}
+.alo-brands .nbs-flexisel-nav-left{
+   float: left;
+   left: 0;
+}
+/* End add by DVN */
+
+.mage-producttabs  .item.first{margin-left: 0px;}
+.mage-producttabs  .item{
+	float:left;
+	margin-bottom:30px;
+	/*padding-left: 30px;*/
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.mage-magictabs  .item-animate{
+	opacity: 0;
+	filter:alpha(opacity = 0);
+    position: relative;
+}
+.mage-magictabs  .play .item-animate{
+	opacity: 1;
+	filter:alpha(opacity = 100);
+}
+.mage-magictabs  .play .item-animate{
+	-webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.mage-magictabs  .zoomIn.play .item-animate{
+	-webkit-animation: zoomIn 600ms ease both;
+    -moz-animation: zoomIn 600ms ease both;
+    -o-animation: zoomIn 600ms ease both;
+    animation: zoomIn 600ms ease both;
+}
+.mage-magictabs  .zoomOut.play .item-animate{
+	-webkit-animation: zoomOut 600ms ease both;
+    -moz-animation: zoomOut 600ms ease both;
+    -o-animation: zoomOut 600ms ease both;
+    animation: zoomOut 600ms ease both;
+}

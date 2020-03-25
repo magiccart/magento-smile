@@ -1,0 +1,110 @@
+.bx-wrapper .bx-caption {
+    display:none;
+}
+.magicslider .bx-caption {
+    margin: 0 auto;
+    position: absolute;
+    top: 37%;
+	left:0;
+	right:0;
+	text-align:left ;
+}
+.bx-wrapper .bx-caption.start, 
+.bx-wrapper .bx-caption.play {
+	display:block;
+	
+}
+
+.play .caption1 {
+    font-weight:bold;
+    font-size: 23px;
+	font-family: "Montserrat",sans-serif;
+	color:#d6644a ;
+    z-index:30;
+    padding:0;
+    -moz-animation: fadeInRight 0.8s ease-in 1.3s backwards;
+    -webkit-animation: fadeInRight 0.8s ease-in 1s backwards;
+    animation: fadeInRight 0.8s ease-in 1s backwards;
+    opacity: 1;
+	line-height:30px;
+}
+.play .caption1 span{
+    font-size: 29px;
+	font-weight:bold ;
+	color:#d6644a ;
+}
+.play .caption2 {
+	text-shadow: none;
+    z-index:40;
+    padding:8px 0 0;
+    -moz-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    -webkit-animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    animation: fadeInLeft 0.8s ease-in 1.5s backwards;
+    opacity:1;
+}
+.play .caption2  p{
+	font-family: "Montserrat",sans-serif;
+	font-weight:bold;
+	font-size:46px; 
+	line-height:44px;
+    letter-spacing: 0;
+    text-align:left ;
+	text-transform:uppercase;
+    color: #fff;
+	position:relative;
+}
+
+.play .caption3 {
+    cursor: pointer;
+	color: #fff;
+    font-weight:normal;
+	font-family: "Raleway";
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0;
+    text-align:left ;
+	position:relative ;
+    z-index:50;
+    -moz-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    -webkit-animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    animation: fadeInUp 0.8s ease-in 1.7s backwards;
+    opacity:1;
+	display:inline-block;
+	margin:0;
+}
+.play .caption3 p{
+    cursor: pointer;
+    color: #fff;
+    font-weight:normal;
+    font-family: "Raleway";
+    font-size: 18px;
+    line-height: 20px;
+}
+.play .caption3 a:hover {
+   color: #d6644a;
+}
+.play .caption3 a {
+   color:#fff;
+}
+.play .caption4 {
+    -moz-animation: fadeInLeft 1s ease-in 2s backwards;
+    -webkit-animation: fadeInLeft 1sease-in 2s backwards;
+    animation: fadeInLeft 1 sease-in 2s backwards;
+    z-index:60;
+    opacity:1;
+    cursor:pointer;
+	margin:20px 0 0;
+}
+.play .caption4  a {
+    font-weight:bold;
+	font-family: "Montserrat",sans-serif;
+    font-size:12px;
+	color:#fff;
+	outline:none ;
+	padding:15px 24px; 
+	display:inline-block ;
+}
+.play .caption4 a.btn-get {background-color:#d6644a ;} 
+.play .caption4 a.btn-get:hover {background-color:#000 ;} 
+.play .caption4 a.btn-find {background-color:#000 ;} 
+.play .caption4 a.btn-find:hover  {background-color:#d6644a ;} 

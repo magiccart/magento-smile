@@ -1,0 +1,32 @@
+.more-views .nbs-flexisel-ul.vertical li {
+	float: none;
+}
+.product-view .product-collateral .box-collateral {
+	display: none;
+}
+.product-view .product-collateral .box-collateral.active {
+	display: block;
+}
+#backtotop{
+  	border-radius: 50%;	-moz-border-radius: 50%;	-webkit-border-radius: 50%;	-ms-border-radius: 50%;	-o-border-radius: 50%; 
+    bottom: 15px;
+    display: block;
+    height: 50px;
+	width: 50px;
+	line-height:50px;
+    overflow: hidden;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-out 0s;
+    z-index: 50;
+}
+#backtotop .fa{font-size: 16px;line-height: 50px;}
+#backtotop:hover{
+	height: 50px;
+	width: 50px;
+	line-height:50px;
+}
+#backtotop:hover .fa{line-height:50px;}
+#backtotop .back-to-top{display:none;}

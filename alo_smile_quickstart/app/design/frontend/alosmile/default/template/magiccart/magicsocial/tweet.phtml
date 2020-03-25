@@ -1,0 +1,52 @@
+<?php
+/**
+ * Magiccart 
+ * @category    Magiccart 
+ * @copyright   Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license     http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-07-18 20:49:45
+ * @@Modify Date: 2015-01-19 10:06:59
+ * @@Function:
+ */
+?>
+
+<?php
+$helper = Mage::helper('magicsocial');
+if(!$helper->getGeneralCfg('enabled')) return;
+if(!$helper->getTwitterCfg('enabled')) return;
+
+if($tweets = $this->getLatestTweets()): ?>
+<div class="block block-creare-twitter">
+	<div class="block-title"><strong><span><?php echo $this->__('Our Latest Tweets') ?></span></strong></div>
+	<span class="toggle-tab mobile" style="display: none;"><span class="hidden">hidden</span></span>
+    <div class="block-content toggle-content">
+    	<ul>
+		<?php foreach($tweets as $tweet): ?>
+        	<li>
+                <p class="twitter-pic">
+                    <a href="https://twitter.com/<?php echo $tweet["screen_name"] ?>" ><img src="<?php echo $tweet["profile_image_url"] ?>" alt="twitter icon" /></a>
+                </p>
+				<p class="twitter-links">
+					<span class="tweetprofilelink">
+						<strong><a href="https://twitter.com/<?php echo $tweet["screen_name"] ?>" ><?php echo $tweet["screen_name"] ?></a></strong>
+						<a href="https://twitter.com/<?php echo $tweet["screen_name"] ?>" >@<?php echo $tweet["screen_name"] ?></a>
+					</span>
+					<?php echo (string) trim($tweet["tweet"]); ?>
+					<span> - <?php echo (string) trim($tweet["time"]); ?></span>
+				</p>
+            </li>
+        <?php endforeach; ?>
+        <?php if($this->tweetCfg['showfollow']): ?>
+            <li class="last">
+            	<a href="https://twitter.com/<?php echo $this->tweetCfg['twitterid'] ?>" class="twitter-follow-button" data-show-count="false">Follow @<?php echo $this->tweetCfg['twitterid'] ?></a>
+                <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </li>
+        <?php endif; ?>
+        </ul>
+    </div>
+</div>
+
+
+
+<?php endif; ?>

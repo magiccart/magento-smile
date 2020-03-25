@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_block>
+      <title><![CDATA[Smile Reponsive Alo Themes Home page ]]></title>
+      <root_template><![CDATA[one_column]]></root_template>
+      <identifier><![CDATA[home-smile]]></identifier>
+      <content_heading><![CDATA[]]></content_heading>
+      <content><![CDATA[<div class="row">
+<div class="banner-top banner1">
+<div class="banner-inner col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content1.jpg"}}" /> </a></div>
+<div class="box-text box-01">
+<h3>Menswear</h3>
+<p>Intimates Fall/Winter 2014</p>
+</div>
+</div>
+</div>
+<div class="banner-top banner2">
+<div class="banner-inner col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content2.jpg"}}" /> </a></div>
+<div class="box-text box-02">
+<h3>ACCESSORIES</h3>
+<p>Get a new look with Smile collection</p>
+</div>
+</div>
+</div>
+<div class="banner-top banner3">
+<div class="banner-inner col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<div class="banner-inner-content"><a href="#"> <img class="img-responsive" alt="" src="{{media url="wysiwyg/alothemes/static/banner-content3.jpg"}}" /> </a></div>
+<div class="box-text box-03">
+<h3>WOMenswear</h3>
+<p>Smile Collection new arrivals</p>
+</div>
+</div>
+</div>
+</div>
+<div class="alo alo-featured">{{widget type="magiccategory/widget_magiccategory" title="Featured Products" template="magiccart/magiccategory/magiccategory.phtml" category_ids="46,47,48,49" active="2" types="featured" limit="8" enableResponsiveBreakpoints="1" portrait="1" landscape="2" tablet="3" desktop="3" visibleItems="4" marginColumn="30" productDelay="500" widthImages="269" heightImages="360" action="cart,compare,wishlist,review"}}</div>]]></content>
+      <layout_update_xml><![CDATA[<!--<reference name="content">
+        <block type="catalog/product_new" name="home.catalog.product.new" alias="product_new" template="catalog/product/new.phtml" after="cms_page">
+            <action method="addPriceBlockType">
+                <type>bundle</type>
+                <block>bundle/catalog_product_price</block>
+                <template>bundle/catalog/product/price.phtml</template>
+            </action>
+        </block>
+        <block type="reports/product_viewed" name="home.reports.product.viewed" alias="product_viewed" template="reports/home_product_viewed.phtml" after="product_new">
+            <action method="addPriceBlockType">
+                <type>bundle</type>
+                <block>bundle/catalog_product_price</block>
+                <template>bundle/catalog/product/price.phtml</template>
+            </action>
+        </block>
+        <block type="reports/product_compared" name="home.reports.product.compared" template="reports/home_product_compared.phtml" after="product_viewed">
+            <action method="addPriceBlockType">
+                <type>bundle</type>
+                <block>bundle/catalog_product_price</block>
+                <template>bundle/catalog/product/price.phtml</template>
+            </action>
+        </block>
+    </reference>
+    <reference name="right">
+        <action method="unsetChild"><alias>right.reports.product.viewed</alias></action>
+        <action method="unsetChild"><alias>right.reports.product.compared</alias></action>
+    </reference>-->]]></layout_update_xml>
+      <is_active><![CDATA[1]]></is_active>
+    </cms_block>
+  </pages>
+</root>

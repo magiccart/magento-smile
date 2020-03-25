@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!-- /**
+ * Magiccart 
+ * @category 	Magiccart 
+ * @copyright 	Copyright (c) 2014 Magiccart (http://www.magiccart.net/) 
+ * @license 	http://www.magiccart.net/license-agreement.html
+ * @Author: DOng NGuyen<nguyen@dvn.com>
+ * @@Create Date: 2014-09-10 10:42:49
+ * @@Modify Date: 2014-12-16 15:36:01
+ * @@Function:
+ */ -->
+<widgets>
+	<magicslider type="magicslider/widget_slide" translate="Add Slider into page/block" module="magicslider">
+		<name>Magicslider Widget</name>
+		<description type="desc">Add Slider into page/block</description>
+		<parameters>
+			<slide_id translate="label comment">
+				<label>Select Slider</label>
+				<visible>1</visible>
+				<required>1</required>
+				<type>select</type>
+				<source_model>magicslider/widget_slide</source_model>
+			</slide_id>
+			<easing translate="label comment">
+				<label>Easing Effect Slide</label>
+				<visible>1</visible>
+                <value>easeInSine</value>
+				<type>select</type>
+				<source_model>magicslider/widget_effect</source_model>
+                <description>Default random</description>
+			</easing>
+            <controls translate="label comment">
+                <label>Show Next/Back control: </label>
+                <visible>1</visible>
+                <value>1</value>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <description>Show Control Nav Slide</description>
+            </controls>
+            <pager translate="label comment">
+                <label>Show Pager control: </label>
+                <visible>1</visible>
+                <value>0</value>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+                <description>Show Next vs Previous navigation</description>
+            </pager>
+            <pause translate="label comment">
+                <label>Pause: </label>
+                <visible>1</visible>
+                <value>4000</value>
+                <type>text</type>
+                <required>1</required>
+                <description>The amount of time (in ms) between each auto transition</description>
+            </pause>
+            <speed translate="label comment">
+                <label>Speed: </label>
+                <visible>1</visible>
+                <value>500</value>
+                <type>text</type>
+                <required>1</required>
+                <description>Slide transition duration (in ms)</description>
+            </speed>
+            <width translate="label comment">
+                <label>Width Images</label>
+                <visible>1</visible>
+                <value>800</value>
+                <type>text</type>
+                <required>1</required>
+                <description>Resize Width Images Slide</description>
+            </width>
+            <height translate="label comment">
+                <label>Height Images</label>
+                <visible>1</visible>
+                <value>600</value>
+                <type>text</type>
+                <required>1</required>
+                <description>Resize Height Images Slide</description>
+            </height>
+			<template>  
+				<visible>0</visible>  
+				<value>magiccart/magicslider/magicslider.phtml</value>  
+			</template>			
+		</parameters>
+	</magicslider>
+</widgets>
